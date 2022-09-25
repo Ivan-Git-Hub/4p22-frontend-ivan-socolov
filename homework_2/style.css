@@ -5,9 +5,10 @@ a {
   font-size: large;
 }
 
-html {
+body {
   text-align: center;
 }
+
 h2 {
   color: red;
 }
@@ -56,4 +57,7 @@ td {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
+}
+li{
+  text-align: left;
 }
