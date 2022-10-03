@@ -1,0 +1,84 @@
+* {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 45px;
+}
+.container img {
+  width: 250px;
+  height: 250px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 147px;
+  height: 628px;
+  width: 342px;
+  box-shadow: 0 0 50px 50px rgb(254, 255, 217);
+  transition: 5s;
+}
+body {
+  background: url(./fon.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0026ff;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 50px;
+  background: #00ffff9e;
+  color: #0000ff;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 50px;
+  transition: 5s ease-in;
+}
+.dogs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 25px;
+}
+.price past__price {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+  display: block;
+}
+span {
+  font-style: italic;
+  font-weight: 900;
+}
+.past__price {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-style: double;
+}
+
+h3 {
+  margin: -91px -12px 30px -9px;
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.container :hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.5);
+}
+.container :hover .button {
+  background: rgba(255, 249, 196, 0);
+}
+
+.block_prices {
+  margin: 0px 0px 30px 0px;
+  padding: 0px 86px 0px 88px;
+}
