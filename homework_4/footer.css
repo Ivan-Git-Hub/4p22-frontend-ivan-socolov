@@ -1,31 +1,9 @@
-.footer-link-1 {
-  text-decoration: none;
-  display: inline-block;
-  background: #00ffff9e;
-  color: #0000ff;
-  text-transform: uppercase;
-  font-size: 20px;
-  transform: translateY(-700px);
+.footer {
+  display: flex;
+  justify-content: space-around;
 }
-.footer-link-2 {
-  text-decoration: none;
-  display: inline-block;
-  background: #00ffff9e;
-  color: #0000ff;
-  text-transform: uppercase;
-  font-size: 20px;
-  transform: translateY(-700px);
-}
-.footer-link-3 {
-  text-decoration: none;
-  display: inline-block;
-  background: #00ffff9e;
-  color: #0000ff;
-  text-transform: uppercase;
-  font-size: 20px;
-  transform: translateY(-700px);
-}
-.footer-link-4 {
+
+.footer-link {
   text-decoration: none;
   display: inline-block;
   background: #00ffff9e;
