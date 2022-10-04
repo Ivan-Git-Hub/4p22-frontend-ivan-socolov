@@ -9,6 +9,8 @@
 .container img {
   width: 250px;
   height: 250px;
+    transition: 5s ease-in;
+
 }
 .container {
   display: flex;
@@ -17,10 +19,9 @@
   height: 628px;
   width: 342px;
   box-shadow: 0 0 50px 50px rgb(254, 255, 217);
-  transition: 5s;
 }
 body {
-  background: url(./fon.jpg) no-repeat center fixed;
+  background: url(fon.jpg) no-repeat center fixed;
   background-size: cover;
 }
 .description {
@@ -29,6 +30,7 @@ body {
   color: #0026ff;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  transition: 5s ease-in;
 }
 .button {
   text-decoration: none;
@@ -39,7 +41,7 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   line-height: 50px;
-  transition: 5s ease-in;
+  transition: 2.5s ease-in;
 }
 .dogs {
   display: flex;
@@ -52,6 +54,7 @@ body {
   font-weight: 700;
   color: rgb(255, 0, 0);
   display: block;
+  transition: 5s ease-in;
 }
 span {
   font-style: italic;
@@ -61,6 +64,7 @@ span {
   text-decoration: line-through;
   text-decoration-color: red;
   text-decoration-style: double;
+  transition: 2.5s ease-in;
 }
 
 h3 {
@@ -68,6 +72,7 @@ h3 {
   display: block;
   font-size: 1.17em;
   font-weight: bold;
+  transition: 5s ease-in;
 }
 .container :hover {
   position: relative;
@@ -81,4 +86,5 @@ h3 {
 .block_prices {
   margin: 0px 0px 30px 0px;
   padding: 0px 86px 0px 88px;
+  transition: 5s ease-in;
 }
