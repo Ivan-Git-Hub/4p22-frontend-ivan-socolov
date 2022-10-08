@@ -14,6 +14,14 @@
     left: 21px;
 }
 
+.main {
+    flex: 1 0 auto;
+}
+
+div {
+    display: block;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -74,8 +82,8 @@ h3 {
     left: 340px;
     width: 75%;
     padding-bottom: 280px;
-    overflow: auto;
     font-size: xx-large;
+    z-index: -1;
 }
 
 .directory__wrapper {
@@ -115,26 +123,4 @@ h3 {
     margin-top: -210px;
     height: 210px;
     visibility: hidden;
-}
-
-.footer {
-    flex: 0 0 auto;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-}
-
-.footer__wrapper {
-    background-color: #000;
-    width: 100%;
-}
-
-.footer__text {
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 12px;
-    color: rgba(255, 255, 255, 0.8);
 }
