@@ -28,6 +28,7 @@ div {
 
 html {
     background: bisque;
+    font-family: 'Oswald', sans-serif;
 }
 
 ul {
@@ -98,7 +99,6 @@ h3 {
     position: -webkit-sticky;
     position: sticky;
     top: 150px;
-    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     display: block;
     width: 100%;
@@ -108,7 +108,6 @@ h3 {
 }
 
 .directory__element-list {
-    font-family: "Roboto", sans-serif;
     font-size: 24px;
     padding: 8px;
 }
