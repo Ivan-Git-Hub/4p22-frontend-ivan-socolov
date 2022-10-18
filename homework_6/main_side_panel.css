@@ -1,44 +1,35 @@
-
 /* стили боковой панели */
 .nav {
-    width: 320px;
-    min-width: 320px;
+    width: 700px;
+    min-width: 700px;
     height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
     margin: 0;
-    left: -320px;
+    left: -700px;
     padding: 15px 20px;
-    -webkit-transition: left 0.3s;
-    -moz-transition: left 0.3s;
-    transition: left 0.3s;
+    transition: left 4s;
     z-index: 2000;
 }
 
 .nav-toggle {
     position: absolute;
-    left: 320px;
-    top: 1em;
+    color: cornflowerblue;
+    left: 1327px;
+    top: 2.5em;
     padding: 0.5em;
     background: inherit;
-    color: black;
     cursor: pointer;
     font-size: 1.2em;
     line-height: 1;
     z-index: 2001;
-    -webkit-transition: color 0.25s ease-in-out;
-    -moz-transition: color 0.25s ease-in-out;
-    transition: color 0.25s ease-in-out;
+    transition: color 0.9s ease-in-out;
 }
 
 .nav-toggle::after {
     content: '\2630'' ☎'' \2937';
     text-decoration: none;
-}
-
-.nav-toggle:hover {
-    color: green;
 }
 
 [id='nav-toggle'] {
@@ -47,22 +38,21 @@
 }
 
 [id='nav-toggle']:checked~.nav>.nav-toggle {
-    left: auto;
+    left: inherit;
     right: 2px;
-    top: 1em;
+    top: 5.4em;
 }
 
 [id='nav-toggle']:checked~.nav {
     left: 0;
     box-shadow: 43px 0px 150px 50px rgba(102, 205, 171, 0.5);
-    -moz-box-shadow: 4px 0px 20px 0px rgba(102, 205, 171, 0.5);
     overflow-y: auto;
 }
 
 [id='nav-toggle']:checked~main>article {
-    -webkit-transform: translateX(320px);
-    -moz-transform: translateX(320px);
-    transform: translateX(320px);
+    -webkit-transform: translateX(700px);
+    -moz-transform: translateX(700px);
+    transform: translateX(700px);
 }
 
 [id='nav-toggle']:checked~.nav>.nav-toggle:after {
@@ -70,7 +60,6 @@
 }
 
 .nav h2 {
-    width: 90%;
     padding: 0px 0px 100px 0px;
     margin: 10px 0;
     text-align: center;
@@ -103,7 +92,7 @@
 }
 
 [id='nav-toggle']:checked~.nav h2 {
-    opacity: 1;
+    opacity: .2;
     transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
@@ -222,19 +211,14 @@
     display: inline-block;
     position: relative;
     padding: 0;
-     <a class="a" href: 'Open Sans',
+    <a class="a"href: 'Open Sans',
         sans-serif;
     font-weight: 900;
     font-size: 1.2em;
     color: #000000;
     width: 100%;
     text-decoration: none;
-    -webkit-transition: color .5s ease,
-        padding .5s ease;
-    -moz-transition: color .5s ease,
-        padding .5s ease;
-    transition: color .5s ease,
-        padding .5s ease;
+    transition: color 2s ease, padding 2s ease;
 }
 
 .nav>ul>li>a:hover,
@@ -289,7 +273,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 700;
     width: 100%;
     height: 100%;
     visibility: hidden;

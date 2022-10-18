@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    font-size: 30px;
+}
+
+.box {
+    font-size: 1.5em;
+    background: red;
+}
+
+.text {
+    line-height: 2em;
+    font-size: 1em;
+}

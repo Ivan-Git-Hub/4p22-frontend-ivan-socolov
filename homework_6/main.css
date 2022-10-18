@@ -1,25 +1,25 @@
 /* основное содержимое */
 /* стили логотипа */
 .main-logo-1 {
-    width: 300px;
+    width: calc(200 / 720 * 100vw);
     position: fixed;
-    top: 550px;
-    left: 21px;
+    top: calc(670 / 720 * 100vw);
+    left: calc(21 / 720 * 100vw);
 }
 
 .main-logo-2 {
-    width: 300px;
+    width: calc(200 / 720 * 100vw);
     position: fixed;
-    top: 116px;
-    left: 21px;
+    top: calc(227 / 720 * 100vw);
+    left: calc(21 / 720 * 100vw);
 }
 
 .main {
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
 }
 
 div {
-    display: block;
+    /* display: block; */
 }
 
 * {
@@ -28,7 +28,7 @@ div {
 
 html {
     background: bisque;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Comic Mono', sans-serif;
 }
 
 ul {
@@ -49,40 +49,36 @@ ul {
 
 .header__wrapper {
     position: fixed;
-    left: -180px;
     width: 100%;
     display: flex;
-    height: 120px;
+    height: calc(113 / 720 * 100vw);
     background-color: bisque;
-    font-size: 40px;
-    justify-content: space-around;
+    font-size: calc(40 / 720 * 100vw);
+    justify-content: center;
 }
 
 .header__img-wrapper {
-    height: 80px;
+    height: calc(80 / 720 * 100vw);
 }
 
 .header__img {
     height: 100%;
+    width: 100%;
 }
 
 h3 {
-    margin: 0;
-    padding: 0;
     color: mediumaquamarine;
 }
 
 .header__title {
-    padding: 33px 0px 0px 0px;
     color: darkorange;
 }
 
 .directory {
     position: absolute;
-    top: 220px;
-    left: 340px;
-    width: 75%;
-    padding-bottom: 280px;
+    top: calc(220 / 720 * 100vw);
+    left: calc(340 / 720 * 100vw);
+    padding-bottom: calc(280 / 720 * 100vw);
     font-size: xx-large;
     z-index: -1;
 }
@@ -96,30 +92,29 @@ h3 {
 }
 
 .directory__element-subtitle {
-    position: -webkit-sticky;
     position: sticky;
-    top: 150px;
+    margin-bottom: calc(50 / 720 * 100vw);
+    margin-left: calc(150 / 720 * 100vw);
+    top: calc(150 / 720 * 100vw);
     text-transform: uppercase;
-    display: block;
     width: 100%;
-    padding: 6px 6px 6px 10px;
     text-align: center;
-    font-size: inherit;
+    font-size: calc(30/ 720 * 100vw);
 }
 
 .directory__element-list {
-    font-size: 24px;
-    padding: 8px;
+    font-size: calc(24 / 720 * 100vw);
+    padding: calc(8 / 720 * 100vw);
 }
 
 .directory__element-item {
-    margin-bottom: 15px;
+    margin-bottom: calc(15 / 720 * 100vw);
 }
 
 *[id]:before {
     display: block;
     content: " ";
-    margin-top: -210px;
-    height: 210px;
+    margin-top: calc(-210 / 720 * 100vw);
+    height: calc(210 / 720 * 100vw);
     visibility: hidden;
 }
