@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   margin: 0;
   background: #1A226B;
 }
@@ -72,7 +72,6 @@ body {
 
 .container-form-email__input::placeholder {
   color: #CCCCCC;
-  ;
 }
 
 .container-form-password__label {
