@@ -11,17 +11,20 @@
     padding: 15px 20px;
     transition: left 4s;
     z-index: 2000;
+    font-family: 'Comic Mono',
+        sans-serif;
+
 }
 
 .nav-toggle {
-    position: absolute;
+    position: fixed;
     color: cornflowerblue;
-    left: 1327px;
-    top: 2.5em;
+    left: 1vw;
+    top: 1vw;
     padding: 0.5em;
     background: inherit;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 2vw;
     line-height: 1;
     z-index: 2001;
     transition: color 0.9s ease-in-out;
@@ -211,8 +214,6 @@
     display: inline-block;
     position: relative;
     padding: 0;
-    <a class="a"href: 'Open Sans',
-        sans-serif;
     font-weight: 900;
     font-size: 1.2em;
     color: #000000;
