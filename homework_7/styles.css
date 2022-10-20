@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   background: #1b2473;
 }
 
@@ -208,19 +208,21 @@ body {
   .box-form__label-checkbox {
     width: 100%;
     height: calc(16 / 768 * 100vw);
-    padding-top: 4%;
+    /* padding-top: 4%; */
     padding-left: 6%;
     font-style: normal;
     font-weight: 400;
     font-size: calc(18 / 768 * 100vw);
-    line-height: calc(16 / 768 * 100vw);
+    /* line-height: calc(16 / 768 * 100vw); */
+    line-height: calc(30 / 768 * 100vw);
     color: #787878;
   }
 
   .box-form__label-checkbox::before {
     content: "";
     position: absolute;
-    top: calc(347 / 1440 * 100vw);
+    /* top: calc(347 / 1440 * 100vw); */
+    top: calc(321 / 1440 * 100vw);
     width: calc(28 / 768 * 100vw);
     height: calc(28 / 768 * 100vw);
     border: calc(2 / 768 * 100vw) solid #787878;
@@ -231,10 +233,10 @@ body {
   .box-form__label-checkbox::after {
     content: "";
     position: absolute;
-    left: calc(-2 / 768 * 100vw);
-    top: calc(184 / 768 * 100vw);
-    width: calc(39 / 768 * 100vw);
-    height: calc(38 / 768 * 100vw);
+    left: calc(-14 / 768 * 100vw);
+    top: calc(157 / 768 * 100vw);
+    width: calc(47 / 768 * 100vw);
+    height: calc(48 / 768 * 100vw);
     background: url(./img/logo/check_mark.png);
     background-size: 100% 100%;
     opacity: 0;
