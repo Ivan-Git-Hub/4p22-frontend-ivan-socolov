@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #1b2473;
+}
+
+.box-form {
+  position: relative;
+  width: calc(600 / 1440 * 100vw);
+  height: calc(412 / 1440 * 100vw);
+  margin-top: calc(82 / 1440 * 100vw);
+  margin-left: calc(412 / 1440 * 100vw);
+  padding-top: calc(26 / 1440 * 100vw);
+  padding-right: calc(45 / 1440 * 100vw);
+  padding-bottom: calc(45 / 1440 * 100vw);
+  padding-left: calc(45 / 1440 * 100vw);
+  background: #ffffff;
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.box-form__h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(50 / 1440 * 100vw);
+  text-align: center;
+  color: #787878;
+}
+
+.box-form__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+}
+
+.box-form__label {
+  margin-left: calc(7 / 1440 * 100vw);
+  font-weight: 700;
+  font-size: calc(16 / 1440 * 100vw);
+  line-height: calc(16 / 1440 * 100vw);
+  color: #787878;
+}
+
+.box-form__input {
+  width: 100%;
+  height: calc(49 / 1440 * 100vw);
+  margin-bottom: calc(13 / 1440 * 100vw);
+  padding-left: calc(13 / 1440 * 100vw);
+  border: 2px solid #787878;
+  border-radius: calc(10 / 1440 * 100vw);
+  background: #ffffff;
+  font-weight: 700;
+  font-size: calc(28 / 1440 * 100vw);
+  line-height: calc(36 / 1440 * 100vw);
+  color: #787878;
+}
+
+.box-form__input:focus {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.box-form__input::placeholder {
+  font-weight: 700;
+  font-size: calc(28 / 1440 * 100vw);
+  line-height: calc(36 / 1440 * 100vw);
+  color: #cccccc;
+}
+
+.box-form__hidden-checkbox {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+}
+
+.box-form__label-checkbox {
+  display: inline-block;
+  margin-top: calc(20 / 1440 * 100vw);
+  padding-left: calc(35 / 1440 * 100vw);
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(14 / 1440 * 100vw);
+  line-height: calc(16 / 1440 * 100vw);
+  color: #787878;
+}
+
+.box-form__label-checkbox::before {
+  content: "";
+  position: absolute;
+  top: calc(169 / 1440 * 100vw);
+  left: calc(0 / 1440 * 100vw);
+  width: calc(21 / 1440 * 100vw);
+  height: calc(21 / 1440 * 100vw);
+  border: 2px solid #787878;
+  border-radius: calc(7 / 1440 * 100vw);
+  background: #ffffff;
+}
+
+.box-form__label-checkbox::after {
+  content: "";
+  position: absolute;
+  left: calc(-15 / 1440 * 100vw);
+  top: calc(154 / 1440 * 100vw);
+  width: calc(51 / 1440 * 100vw);
+  height: calc(46 / 1440 * 100vw);
+  background: url(./img/logo/check_mark.png);
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: 2;
+}
+
+.box-form__hidden-checkbox:checked+.box-form__label-checkbox::after {
+  opacity: 1;
+}
+
+.box-form__button {
+  width: calc(180 / 1440 * 100vw);
+  height: calc(52 / 1440 * 100vw);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: calc(34 / 1440 * 100vw);
+  background: #1a226b;
+  border-radius: calc(10 / 1440 * 100vw);
+  font-weight: 700;
+  font-size: calc(24 / 1440 * 100vw);
+  line-height: calc(16 / 1440 * 100vw);
+  color: #ffffff;
+}
+
+.box-form__button:hover {
+  background: #212b87;
+}
+
+.box-form__button:active {
+  border: 2px solid #aeaeae;
+}
+
+@media screen and (max-width: 769px) {
+  .box-form {
+    width: calc(728 / 768 * 100vw);
+    height: calc(697 / 768 * 100vw);
+    margin: 3% 3%;
+    padding: 5.5% 6.5%;
+    padding-right: 6.5%;
+    padding-bottom: 6.5%;
+    padding-left: 6.5%;
+    background: #ffffff;
+    box-shadow: 0 0 calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+    border-radius: calc(20 / 768 * 100vw);
+  }
+
+  .box-form__h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(60 / 768 * 100vw);
+    line-height: calc(50 / 768 * 100vw);
+    text-align: center;
+    color: #787878;
+  }
+
+  .box-form__form {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-form__label {
+    margin: 0.8% 0.7%;
+    font-weight: 700;
+    font-size: calc(24 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
+    color: #787878;
+  }
+
+  .box-form__input {
+    width: 100%;
+    height: calc(49 / 768 * 100vw);
+    padding-left: 1.8%;
+    border: calc(2 / 768 * 100vw) solid #787878;
+    border-radius: calc(10 / 768 * 100vw);
+    background: #ffffff;
+    font-weight: 700;
+    font-size: calc(28 / 768 * 100vw);
+    line-height: calc(36 / 768 * 100vw);
+    color: #787878;
+  }
+
+  .box-form__input::placeholder {
+    font-weight: 700;
+    font-size: calc(28 / 768 * 100vw);
+    line-height: calc(36 / 768 * 100vw);
+    color: #cccccc;
+  }
+
+  .box-form__hidden-checkbox {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+  }
+
+  .box-form__label-checkbox {
+    width: 100%;
+    height: calc(16 / 768 * 100vw);
+    /* padding-top: 4%; */
+    padding-left: 6%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(18 / 768 * 100vw);
+    /* line-height: calc(16 / 768 * 100vw); */
+    line-height: calc(30 / 768 * 100vw);
+    color: #787878;
+  }
+
+  .box-form__label-checkbox::before {
+    content: "";
+    position: absolute;
+    /* top: calc(347 / 1440 * 100vw); */
+    top: calc(321 / 1440 * 100vw);
+    width: calc(28 / 768 * 100vw);
+    height: calc(28 / 768 * 100vw);
+    border: calc(2 / 768 * 100vw) solid #787878;
+    border-radius: calc(7 / 768 * 100vw);
+    background: #ffffff;
+  }
+
+  .box-form__label-checkbox::after {
+    content: "";
+    position: absolute;
+    left: calc(-14 / 768 * 100vw);
+    top: calc(157 / 768 * 100vw);
+    width: calc(47 / 768 * 100vw);
+    height: calc(48 / 768 * 100vw);
+    background: url(./img/logo/check_mark.png);
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: 2;
+  }
+
+  .box-form__hidden-checkbox:checked+.box-form__label-checkbox::after {
+    opacity: 1;
+  }
+
+  .box-form__button {
+    width: calc(220 / 768 * 100vw);
+    height: calc(80 / 768 * 100vw);
+    margin-top: 12.5%;
+    border-radius: calc(10 / 768 * 100vw);
+    background: #1a226b;
+    font-weight: 700;
+    font-size: calc(32 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
+    color: #ffffff;
+  }
+}
