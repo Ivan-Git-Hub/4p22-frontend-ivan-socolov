@@ -48,7 +48,6 @@
     color: #787878;
 }
 
-
 .header__Entrance {
     /* Вход */
     position: absolute;
@@ -109,6 +108,101 @@
     background: url(./img/logo/innopolis_logo.png);
 }
 
+.box-form__button {
+    /* Регистрация */
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    /* identical to box height, or 67% */
+    color: #FFFFFF;
+    /* Rectangle 2 */
+    width: 180px;
+    height: 52px;
+    top: 966px;
+    left: 630px;
+    background: #1A226B;
+}
+
+.box-form__floor-female {}
+
+.box-form__floor-male {}
+
+.box-form__form {}
+
+.box-form__hidden-checkbox {
+    /* Rectangle 3 */
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 886px;
+    left: 463px;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+
+.box-form__input-email {}
+
+.box-form__input-floor-female {}
+
+
+.box-form__label-checkbox {
+
+}
+
+
+.box-form__label-email {}
+
+.header {}
+
+.header__Entrance {}
+
+.header__PCS-Frontend {}
+
+.header__Registration {}
+
+.header__innopolis-logo {}
+
+.main {}
+
+.box-form__label-About-Me {
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    top: 595px;
+    left: 465px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    color: #787878;
+}
+
+.box-form__input-About-Me {
+    /* Расскажите о себе... */
+    position: absolute;
+    width: 510px;
+    height: 246px;
+    top: 616px;
+    left: 465px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height, or 129% */
+    color: #CCCCCC;
+    /* Rectangle 1 */
+    background: #FFFFFF;
+    border: 2px solid #787878;
+    padding: 7px 217px 203px 15px;
+}
+
 .box-form__label-email {
     /* Email */
     position: absolute;
@@ -140,4 +234,86 @@
     padding: 7px 0px 6px 15px;
     background: #FFFFFF;
     border: 2px solid #787878;
+}
+
+.box-form__label-password {
+    /* Пароль */
+    position: absolute;
+    width: 56px;
+    height: 16px;
+    top: 352px;
+    left: 465px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    color: #787878;
+}
+
+.box-form__input-password {
+    position: absolute;
+    width: 509px;
+    height: 49px;
+    top: 374px;
+    left: 465px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #787878;
+    padding: 7px 0px 6px 15px;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+
+.box-form__input-confirmation-password {
+    position: absolute;
+    width: 509px;
+    height: 49px;
+    top: 455px;
+    left: 465px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #787878;
+    padding: 7px 0px 6px 15px;
+    background: #FFFFFF;
+    border: 2px solid #787878;
+}
+
+.box-form__label-confirmation-password {
+    /* Подтверждение пароля */
+    position: absolute;
+    width: 182px;
+    height: 16px;
+    top: 433px;
+    left: 465px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    color: #787878;
+}
+
+.box-form__label-floor {
+    /* Пол */
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    top: 514px;
+    left: 463px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    color: #787878;
 }

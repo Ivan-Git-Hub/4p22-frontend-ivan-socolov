@@ -22,26 +22,33 @@
             <h1>Вход</h1>
         </a>
     </header>
-    <main class="main">m
+    <main class="main">
         <div class="box-form"></div>
         <h1 class="box-form__h1">Вход</h1>
         <form class="box-form__form"></form>
-        <label class="box-form__label-email" for="email">Email</label>
+
         <input class="box-form__input-email" id="email" type="email" name="email" placeholder="Введите email">
+        <label class="box-form__label-email" for="email">Email</label>
+
+        <input class="box-form__input-password" id="password" type="password" name="password"
+            placeholder="Введите пароль">
         <label class="box-form__label-password" for="password">Пароль</label>
-        <input class="box-form__input" id="password" type="password" name="password" placeholder="Введите пароль">
-        <input class="box-form__confirmation-password" id=" confirmation-password" type="password"
+        <input class="box-form__input-confirmation-password" id=" confirmation-password" type="password"
             name="confirmation-password" placeholder="Подтвердите пароль">
         <label class="box-form__label-confirmation-password" for="confirmation-password">Подтверждение пароля</label>
+
         <label class="box-form__label-floor">Пол</label>
-        <input class="box-form__input-floor-male" id="floor-male" type="checkbox" name="floor-male">
-        <label class="box-form__floor-male" for="floor-male">Мужчина</label>
         <input class="box-form__input-floor-female" id="floor-female" type="checkbox" name="floor-female">
+        <label class="box-form__floor-male" for="floor-male">Мужчина</label>
         <label class="box-form__floor-female" for="floor-female">Женщина</label>
-        <label class="box-form__About-Me" for="About-Me">О себе</label>
-        <input class="box-form__About-Me" id="About-Me" type="text" name="About-Me" placeholder="Расскажите о себе...">
+
+        <input class="box-form__input-About-Me" id="About-Me" type="text" name="About-Me"
+            placeholder="Расскажите о себе...">
+        <label class="box-form__label-About-Me" for="About-Me">О себе</label>
+
         <input class="box-form__hidden-checkbox" id="agreement" type="checkbox" name="agreement">
         <label class="box-form__label-checkbox" for="agreement">Я согласен получать обновления на почту</label>
+
         <button class="box-form__button">Регистрация</button>
     </main>
 </body>
