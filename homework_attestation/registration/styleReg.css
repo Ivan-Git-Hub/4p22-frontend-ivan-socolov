@@ -167,19 +167,19 @@
   margin-bottom: 0.4vw;
 }
 
-.radio__input-man {
+.radio__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.radio__input-man+label {
+.radio__input+label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.radio__input-man+label::before {
+.radio__input+label::before {
   content: "";
   display: inline-block;
   width: 0.7vw;
@@ -191,11 +191,11 @@
   margin-right: 0.7vw;
 }
 
-.radio__input-man:checked+label::before {
+.radio__input:checked+label::before {
   background-color: #787878;
 }
 
-.radio__label-man {
+.radio__label {
   color: rgb(120, 120, 120);
 }
 
@@ -205,19 +205,19 @@
   margin: 0 0 0.3vw 0;
 }
 
-.radio__input-woman {
+.radio__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.radio__input-woman+label {
+.radio__input+label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.radio__input-woman+label::before {
+.radio__input+label::before {
   content: "";
   display: inline-block;
   width: 0.7vw;
@@ -229,11 +229,11 @@
   margin-right: 0.7vw;
 }
 
-.radio__input-woman:checked+label::before {
+.radio__input:checked+label::before {
   background-color: #787878;
 }
 
-.radio__label-woman {
+.radio__label {
   color: rgb(120, 120, 120);
 }
 
@@ -390,7 +390,7 @@
     margin-bottom: 0.8vw;
   }
 
-  .radio__input-man+label::before {
+  .radio__input+label::before {
     width: 0.9vw;
     height: 0.9vw;
     padding: 0.2604166667vw;
@@ -402,7 +402,7 @@
     margin: 0 0 0.5625vw 0;
   }
 
-  .radio__input-woman+label::before {
+  .radio__input+label::before {
     width: 0.9vw;
     height: 0.9vw;
     padding: 0.2604166667vw;
