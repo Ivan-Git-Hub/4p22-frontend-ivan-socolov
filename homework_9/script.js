@@ -21,6 +21,24 @@ function clearAll() {
 }
     document.querySelector('.ac').onclick = clearAll; //очистка чисел
 
+const button = document.getElementById('button');
+const numbers = document.getElementById('numbers');
+
+const fibonacci = function makeFibonacciFunction() {
+    let previousNumber = 0;
+    let nextNumber = 1;
+
+    return function () {
+        let result = previousNumber + nextNumber;
+        previousNumber = nextNumber;
+        nextNumber = result;
+        console.log(previousNumber);
+        numbers.innerHTML += `${previousNumber}` + ', '
+    };
+};
+
+button.addEventListener('click', fibonacci());
+
     document.querySelector('.buttons').onclick = (event) => { //работа по клику
 
         if (!event.target.classList.contains('btn')) return; // нажата не кнопка
@@ -80,6 +98,6 @@ function clearAll() {
             }
             finish = true;
             out.textContent = a; //вывод переменной a;
-            console.table(a, b, sign); //вывод в console значений операций;
-        }
+            console.table(a, b, sign); //вывод в console значений операций; 
+        } 
     }
