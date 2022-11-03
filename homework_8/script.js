@@ -3,15 +3,11 @@
 const button = document.getElementById('submit');
 const resultform = document.getElementById('resultform');
 
-//button.addEventListener('click', (event) => {
-
 function func() {
     const num1 = document.getElementById('num1').value;
     const operator = document.getElementById('operator').value;
     const num2 = document.getElementById('num2').value;
     let result;
-
-    // event.preventDefault();
 
     if (num1 === "") {
         resultform.innerText = "Первое число не указано";
@@ -75,5 +71,4 @@ function func() {
         resultform.innerText = result;
         console.log(result);
     }
-    //})
 }
