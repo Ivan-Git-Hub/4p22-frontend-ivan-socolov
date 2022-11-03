@@ -4,43 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>homework_8</title>
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="calc">
-        <div class="calc-screen">
-            <p>0</p>
+    <header>
+        <div class="form__heading">
+            <h1>Калькулятор</h1>
         </div>
-        <div class="buttons">
-            <div class="btn ac bg-grey">ac</div>
-            <div class="btn plus-minus bg-grey">+/-</div>
-            <div class="btn percent bg-grey">%</div>
-            <div class="btn division bg-orange">/</div>
 
-            <div class="btn seven">7</div>
-            <div class="btn eigth">8</div>
-            <div class="btn nine">9</div>
-            <div class="btn myltiply bg-orange">X</div>
-
-            <div class="btn four ">4</div>
-            <div class="btn five ">5</div>
-            <div class="btn six ">6</div>
-            <div class="btn minus bg-orange">-</div>
-
-            <div class="btn one ">1</div>
-            <div class="btn two ">2</div>
-            <div class="btn three ">3</div>
-            <div class="btn plus bg-orange">+</div>
-
-            <div class="btn zero ">0</div>
-            <div class="btn dot ">.</div>
-            <div class="btn equal bg-orange">=</div>
-        </div>
-    </div>
+    </header>
+    <main class="main">
+        <section class="form">
+            <section class="form__input">
+                <div class="form-input__num1">
+                    <label class="form-input-num1__label" for="num1">Введите значение 1</label>
+                    <input class="input" id="num1" name="num1" type="text" placeholder="Введите число 1">
+                </div>
+                <div class="form-input__operator">
+                    <label class="form-input-operator__label" for="operator">Введите действие</label>
+                    <input class="input" id="operator" name="operator" type="text" placeholder="+ - / *">
+                </div>
+                <div class="form-input__num2">
+                    <label class="form-input-num2__label" for="num2">Введите значение 2</label>
+                    <input class="input" id="num2" name="num2" type="text" placeholder="Введите число 2">
+                </div>
+                <div class="form__button">
+                    <button onclick="func()" class="form-button" id="submit">Рассчитать</button>
+                </div>
+            </section>
+            <div class="resultform" id="resultform"></div>
+    </main>
     <script src="script.js"></script>
+    <footer></footer>
 </body>
 
 </html>
