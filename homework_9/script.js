@@ -1,25 +1,27 @@
 'use strict';
 
 
-const fibonacci = (() => {
-    let last = -1,
-        next = 1;
+function makeFibonacciFunction() {
+    let next = 1;
+    let last = -1;
 
-    return () => {
+    return function () {
         const result = last + next;
         last = next;
         next = result;
         console.log(result);
         return result;
     };
-})();
+}
 
-fibonacci(); // Вывод в консоль: 0
-fibonacci(); // Вывод в консоль: 1
-fibonacci(); // Вывод в консоль: 1
-fibonacci(); // Вывод в консоль: 2
-fibonacci(); // Вывод в консоль: 3
-fibonacci(); // Вывод в консоль: 5
-fibonacci(); // Вывод в консоль: 8
-fibonacci(); // Вывод в консоль: 13
-fibonacci(); // Вывод в консоль: 21
+const fibonacci1 = makeFibonacciFunction();
+
+fibonacci1(); //  0
+fibonacci1(); //  1
+fibonacci1(); //  1
+fibonacci1(); //  2
+fibonacci1(); //  3
+fibonacci1(); //  5
+fibonacci1(); //  8
+fibonacci1(); //  13
+fibonacci1(); //  21
