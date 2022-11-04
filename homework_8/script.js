@@ -1,5 +1,6 @@
 'use strict';
 
+
 const button = document.getElementById('submit');
 const resultform = document.getElementById('resultform');
 
@@ -9,22 +10,12 @@ function func() {
     const num2 = document.getElementById('num2').value;
     let result;
 
-    if (num1 === "") {
+    if (num1 === "" || num1.trim() === "") {
         resultform.innerText = "Первое число не указано";
         return console.log("Первое число не указано");
     }
 
-    if (num2 === "") {
-        resultform.innerText = "Второе число не указано";
-        return console.log("Второе число не указано");
-    }
-
-    if (num1 === " ") {
-        resultform.innerText = "Первое число не указано";
-        return console.log("Первое число не указано");
-    }
-
-    if (num2 === " ") {
+    if (num2 === "" || num2.trim() === "") {
         resultform.innerText = "Второе число не указано";
         return console.log("Второе число не указано");
     }
