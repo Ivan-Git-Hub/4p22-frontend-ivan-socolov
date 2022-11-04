@@ -20,7 +20,7 @@ function func() {
         return console.log("Второе число не указано");
     }
 
-    if (isNaN(num1) === true || isNaN(num2) === true) {
+    if (isNaN(num1) === true) {
         resultform.innerText = "Некорректный ввод чисел";
         return console.log("Некорректный ввод чисел");
     }
