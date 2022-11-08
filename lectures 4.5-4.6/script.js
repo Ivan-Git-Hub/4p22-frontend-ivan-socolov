@@ -1,88 +1,38 @@
-'use strict';
+'use script'
 
 
-// function deleteFroArray(array = [], index = 0) {
-//     return array.filter((item, innerIndex) => {
-//         // return !(index === InnerIndex);
-//         return index !== innerIndex;
-//     });
-// }
+// Promise;
 
-// function deleteFroArray(array = [], index = 0) {
-//     // return !(index === InnerIndex);
-//     return array.filter((item, innerIndex) => index !== innerIndex);
-// }
-// const arr = ['ghfgh', 'gfhgfh', 'fghfgh'];
-// const obj = {
-//     field: 'fgfg',
-//     field: 'fghfgh',
-//     field: 'dfghfgh',
-// }
+const promise = new Promise((resolve, reject) => {
+            resolve();
+            setTimeout(() => {
+                    resolve();
+                }, 1000;
+            });
 
-// const chelseaSquad = [{
-//     firstName: 'Kepa',
-//     lastName: 'Arrizabalaga',
-// } {
-//     firstName: 'Reece',
-//     lastName: 'James',
-// } {
-//     firstName: 'Cesar',
-//     lastName: 'Azpilicueta',
-// }];
-// const filteredArray = chealseaSquad.filter((item) => {
-//     /*const filteredArray = chealseaSquad.filter((item, index, array) => { */
-//     return item.lastName[0] === 'A';
-//     // return false;
-// });
+        promise.then(() => {
+            console.log('Промис завершился успешно!');
 
-// // const changedArray = deleteFromArray(chealseaSquad, 1);
-// const changedArray = chelseaSquad.map((item) => {
-//     return {
-//         name: item.firstName
-//     };
+        })
 
-//     /*  {
-//         ...item,
-//         id: index
-//     }; */
+        // setTimeout(() => {
+        //     console.log('Hello World!');
+        // }, 1000);
+        // setInterval(() => {
+        //     console.log('Hello World!');
+        // }, 1000);
+        // // 1000 миллисекунд ;
 
-//     /* {
-//         firstName: item.firstName,
-//         lastName: item.lastName,
-//         id: index
-//     }; */
+        // function makeTimeoutFunction() {
+        //     return () => {
+        //         i++;
+        //         console.log(`Вызвано ${i}раз`);
+        //     }
+        // };
 
-//     /*  {
-//         name: `${item.firstName} ${item.lastName}`
-//     } */
-//     /*  {
-//             name: item.firstName,
-//             surName: item.lastName,
-//          */
-// }
-// });
-// console.log(filteredArray);
+        // const timeoutFunction = makeTimeoutFunction();
+        // const interval = setInterval(timeoutFunction, 1000);
 
-const chelseaSquad = [{
-    firstName: 'Kepa',
-    lastName: 'Arrizabalaga',
-} {
-    firstName: 'Reece',
-    lastName: 'James',
-} {
-    firstName: 'Cesar',
-    lastName: 'Azpilicueta',
-}];
-
-const reducedArray = chelseaSquad.reduce((accumulator, item, index) => {
-        return accumulator;
-    }
-    '');
-const reducedArray = chelseaSquad.reduce((accumulator, item, index) => {
-        return accumulator;
-    }
-    '');
-const reducedArray = chelseaSquad.reduce((accumulator, item, index) => {
-        return accumulator;
-    }
-    '');
+        // function stopInterval() {
+        // }
+        // setTimeout(stopInterval, 3000);
