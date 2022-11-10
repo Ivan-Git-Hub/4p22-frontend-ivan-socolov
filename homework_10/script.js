@@ -17,7 +17,9 @@ fetch('https://reqres.in/api/users?per_page=12')
             console.log(' ' + element.last_name);
         });
         console.log('-----------');
+
         // Вывести все данные всех пользователей, фамилия которых начинается на F;
+
         console.log('-----------');
         console.log('Пункт №3:');
         usersData.forEach((element) => {
@@ -28,7 +30,10 @@ fetch('https://reqres.in/api/users?per_page=12')
                 }
             }
         });
-        console.log('-----------'); // Вывести следующее предложение: Наша база содержит данные следующих пользователей: и далее в этой же строке через запятую имена и фамилии всех пользователей. Использовать метод reduce;
+        console.log('-----------');
+
+        // Вывести следующее предложение: Наша база содержит данные следующих пользователей: и далее в этой же строке через запятую имена и фамилии всех пользователей. Использовать метод reduce;
+
         console.log('-----------');
         console.log('Пункт №4:');
         const reduceUser = usersData.reduce((accumulator, item, index, array) => {
@@ -44,7 +49,9 @@ fetch('https://reqres.in/api/users?per_page=12')
         console.log(
             `Наша база содержит данные следующих пользователей: ${reduceUser}`);
         console.log('-----------');
+
         // Вывести названия всех ключей в объекте пользователя;
+        
         console.log('-----------');
         console.log('Пункт №5:');
         arrayKeys = usersData.reduce((container, obj) => [...container, ...Object.keys(obj)], []);
