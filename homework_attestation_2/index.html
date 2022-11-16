@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resets.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <title>Форма Входа</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.png" alt="logo">
+        <div class="header__tittle">PCS Frontend</div>
+        <div class="header__link">
+            <a href="./registration/pageReg.html" class="header__registration">Регистрация</a>
+            <a href="" class="header__login">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="login-card">
+            <div class="login-card__tittle">Вход</div>
+            <form action="#" class="login-card__form-login">
+                <label class="login-card__label-email" for="email">Email</label>
+                <input class="login-card__input-email" type="email" id="email" name="email" placeholder="Email"
+                    autocomplete="off">
+                <label class="login-card__label-password" for="password">Пароль</label>
+                <input class="login-card__input-password" type="password" id="password" name="password"
+                    placeholder="Введите пароль">
+                <button class="login-card__button">Войти</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

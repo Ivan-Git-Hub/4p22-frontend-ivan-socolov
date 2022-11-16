@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resets.css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleReg.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="../img/logo.png" alt="logo">
+        <div class="header__tittle">PCS Frontend</div>
+        <div class="header__link">
+            <a href="" class="header__registration">Регистрация</a>
+            <a href="../index.html" class="header__login">Вход</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="reg">
+            <div class="tittle">Регистрация</div>
+            <form action="#" class="form-registration">
+                <div class="wrapper-input">
+                    <label class="reg__label-email required" for="email">Email</label>
+                    <span class="reg__required-to-fill-email">Поле обязательно для заполнения</span>
+                    <span class="reg__incorrect-input">Email введён некорректно</span>
+                    <input class="reg__input-email reg--error-email" type="email" id="email" name="email"
+                        placeholder="Email" autocomplete="off">
+                </div>
+                <div class="wrapper-input">
+                    <label class="reg__label-password required" for="password">Пароль</label>
+                    <span class="reg__required-to-fill-password">Поле обязательно для заполнения</span>
+                    <span class="reg__password-length">Пароль должен содержать не менее 8
+                        символов</span>
+                    <input class="reg__input-password reg--error-password" type="password" id="password" name="password"
+                        placeholder="Введите пароль">
+                </div>
+                <div class="wrapper-input">
+                    <label class="reg__label-password-confirmation required" for="password-confirmation">Подтверждение
+                        пароля</label>
+                    <span class="reg__not-match">Пароли не совпадают</span>
+                    <input class="reg__input-password-confirmation error-password-confirm" type="password"
+                        id="password-confirmation" name="password-confirmation" placeholder="Подтвердите пароль">
+                </div>
+                <div class="radio">
+                    <legend class="radio__legend">Пол</legend>
+                    <div class="radio__man">
+                        <input class="radio__input radio" type="radio" name="floor" id="man" value="MAN">
+                        <label class="radio__label" for="man">Мужчина</label>
+                    </div>
+                    <div class="radio__woman">
+                        <input class="radio__input radio" type="radio" name="floor" id="woman" value="WOMAN">
+                        <label class="radio__label" for="woman">Женщина</label>
+                    </div>
+                </div>
+                <div class="textarea-comment">
+                    <span class="textarea-comment__span">О себе</span>
+                    <textarea class="comment__textarea" name="comment" id="comment" contenteditable="false"
+                        placeholder="Расскажите о себе..."></textarea>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox__input-checkbox" type="checkbox" id="checkbox" name="checkbox" value="TRUE">
+                    <label class="checkbox__label-checkbox" for="checkbox">Я согласен получать обновления на
+                        почту</label>
+                </div>
+                <button class="reg__button" type="submit">Регистрация</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
